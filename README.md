@@ -52,7 +52,7 @@
 		Перейдите в раздел **Xray Settings**->**Routing Rules**, найдите строку где написано "`geosite:openai`" и отредактируйте её, чтобы получилось: `geosite:category-gov-ru,regexp:.*\.ru$,geosite:openai`  
   
 		Наконец, добавьте новое правило через кнопку Add Rule (IP: `geoip:ru`, Outbound tag: `WARP`).
-		![[chrome_zUPXaQU9dJ.jpg]]
+		![xray](./xray.jpg)
 		Сохранитесь (**Save Settings**), затем перезагрузитесь (**Restart Xray**)
 	3. Находим сайт для маскировки: 
 		Лучше найти сайт-донор либо одного провайдера, либо из той же страны.
@@ -77,7 +77,7 @@
 		**- (Get new cert)**  - нажимаем, генерирует ключи.  
 		  
 		**- (Create)** завершает создание.
-		![[chrome_g23T1QYnR2.jpg]]
+		![vless](./vless.jpg)
 	5. Получите ключ VLESS:
 		В разделе Inbounds нажимаем на (**три точки**) -> **Экспорт ключей (Export Links)** и система даст скопировать строку-ключ вида:
 		`vless://1a593243-6d2a-4543-8aa9-9ef42b2bbba6@ServerIp:443?type=tcp&security=reality&pbk=2Piht6cC_B5B3wYFZyU1Gr_iMfs3LsWghrXZNFjhL18&fp=chrome&sni=yahoo.com&sid=fe60e30f&spx=%2F&flow=xtls-rprx-vision#VLESS1-myname`##
@@ -101,7 +101,7 @@
 		- Настроить прямое соединение с Рунетом. Тут несколько шагов.   
 			1. Сначала - скопировать эту длинную строку с настройками в буфер.
 			2. Затем  вставить её в приложение через «+» справа‑вверху.
-			3. Зайти в «Роутинг», и там (поставить галочку), (нажать на «включить») и вернуться назад (стрелка слева)![[IMG_2521 1.png]]
+			3. Зайти в «Роутинг», и там (поставить галочку), (нажать на «включить») и вернуться назад (стрелка слева)  ![xray](./straisand.png)
 	2. [Shadowrocket](https://apps.apple.com/us/app/shadowrocket/id932747118)(**Платный**)
 	### **macOS:**
 	1. [Hiddify](https://github.com/hiddify/hiddify-next/releases/)
