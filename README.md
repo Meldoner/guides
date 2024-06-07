@@ -29,10 +29,10 @@
 	2. Настраиваем вход:
 		В разделе **Panel Settings** заполните 4 поля:
 		
-		**- Panel Port**: (любое случайное число от 1000 до 65535, кроме 40000.
-		**- Panel Certificate Public Key Path**: `/public.key`.
-		**- Panel Certificate Private Key Path**: `/private.key`.
-		**- Panel URL Root Path**: секретная строка для доступа к панели, которая начинается и заканчивается "/". Придумываем **свою**, например: `/secretpanel/`
+	   	- **Panel Port**: (любое случайное число от 1000 до 65535, кроме 40000.
+		- **Panel Certificate Public Key Path**: `/public.key`.
+		- **Panel Certificate Private Key Path**: `/private.key`.
+		- **Panel URL Root Path**: секретная строка для доступа к панели, которая начинается и заканчивается "/". Придумываем **свою**, например: `/secretpanel/`
 		
 		Сохраняем (**Save**) и перезагружаем панель (**Restart Panel**)
 		Теперь наша панель находится по адресу: `https://ВашIpСервера:ВашПорт/secretpanel/`
