@@ -3,7 +3,7 @@
 2. Подготовка:
 	1. Скачиваем [Termius](https://termius.com/) .
 	2. Подключаемся к своему серверу и обновляемся:
-	    ```sh
+	    	```sh
 		apt update && apt full-upgrade -y
 		```
 		Далее делаем перезапуск: `reboot`
