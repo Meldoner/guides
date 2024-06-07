@@ -1,6 +1,6 @@
 # СОЗДАНИЕ ОБХОДА БЛОКИРОВОК, ИСПОЛЬЗУЯ VLESS
-1. Покупка VPS (самого дешевого) на ОС  Ubuntu/Debian.
-2. Подготовка:
+1. ## Покупка VPS (самого дешевого) на ОС  Ubuntu/Debian.
+2. ## Подготовка:
 	1. Скачиваем [Termius](https://termius.com/) .
 	2. Подключаемся к своему серверу и обновляемся:
 		```sh
@@ -23,7 +23,7 @@
 		docker cp private.key 3x-ui:private.key
 		docker cp public.key 3x-ui:public.key
 		```
-3. Первичная настройка 3x-ui:
+3. ## Первичная настройка 3x-ui:
 	1. Переходим по адресу панели: `http:/ВашIPСервера:2053/`
 		**Логин:** `admin` , **пароль:** `admin`
 	2. Настраиваем вход:
@@ -41,7 +41,7 @@
 		В разделе **Panel Settings**  -> **Security Settings** укажите старые (admin/admin) и придумайте новые логин и пароль и сохраните (**Confirm**).
 		
 		Войдите в панель под новыми данными.
-4. Настройка [Xray](https://tldrify.com/1dsz):
+4. ## Настройка [Xray](https://tldrify.com/1dsz):
 	1. Базовый шаблон:
 		В панели перейдите в раздел **Xray Settings** и включите две опции:  
 		**- IPv4 Configs** -> **Use IPv4 for Google**  
@@ -80,34 +80,34 @@
 		![[chrome_g23T1QYnR2.jpg]]
 	5. Получите ключ VLESS:
 		В разделе Inbounds нажимаем на (**три точки**) -> **Экспорт ключей (Export Links)** и система даст скопировать строку-ключ вида:
-		`vless://1a593243-6d2a-4543-8aa9-9ef42b2bbba6@ServerIp:443?type=tcp&security=reality&pbk=2Piht6cC_B5B3wYFZyU1Gr_iMfs3LsWghrXZNFjhL18&fp=chrome&sni=yahoo.com&sid=fe60e30f&spx=%2F&flow=xtls-rprx-vision#VLESS1-myname`
-	
-
-5. Настройка клиента (на компьютерах и телефонах)
-		**Windows**: 
-			[Hiddify](https://github.com/hiddify/hiddify-next/releases/) :
-				- В настройках установить Регион: **RU**
-				- Скопировать в буфер и вставить в приложение **строку‑ключ VLESS** через кнопку (**+**)
-				- Нажимаем на огромную круглую **кнопку**
-				- Приложение может работать в двух режимах:
-					- Системный прокси (по умолчанию)
-					- TUN-режим
-					- Прокси
-			[Nekoray](https://github.com/Matsuridayo/nekoray/releases) 
-		**Android:**
-			[Hiddify](https://play.google.com/store/apps/details?id=app.hiddify.com) ([Github](https://github.com/hiddify/hiddify-next/releases/))
-			[V2rayNG](https://play.google.com/store/apps/details?id=com.v2ray.ang)
-		**IOS:** 
-			[Streisand](https://apps.apple.com/us/app/streisand/id6450534064):
-				- Скопировать в буфер и вставить в приложение строку-ключ vless через кнопку (+)
-				- Настроить прямое соединение с Рунетом. Тут несколько шагов.   
-					1. Сначала - скопировать эту длинную строку с настройками в буфер.
-					2. Затем  вставить её в приложение через «+» справа‑вверху.
-					3. Зайти в «Роутинг», и там (поставить галочку), (нажать на «включить») и вернуться назад (стрелка слева)![[IMG_2521 1.png]]
-			[Shadowrocket](https://apps.apple.com/us/app/shadowrocket/id932747118)(**Платный**)
-		**macOS:**
-			[Hiddify](https://github.com/hiddify/hiddify-next/releases/)
-			[Streisand](https://apps.apple.com/us/app/streisand/id6450534064)
-Для создания темы использовались ресурсы:
+		`vless://1a593243-6d2a-4543-8aa9-9ef42b2bbba6@ServerIp:443?type=tcp&security=reality&pbk=2Piht6cC_B5B3wYFZyU1Gr_iMfs3LsWghrXZNFjhL18&fp=chrome&sni=yahoo.com&sid=fe60e30f&spx=%2F&flow=xtls-rprx-vision#VLESS1-myname`##
+5. ##  Настройка клиента (на компьютерах и телефонах):
+	### **Windows**: 
+	1. [Hiddify](https://github.com/hiddify/hiddify-next/releases/) :
+	- В настройках установить Регион: **RU**
+	- Скопировать в буфер и вставить в приложение **строку‑ключ VLESS** через кнопку (**+**)
+	- Нажимаем на огромную круглую **кнопку**
+	- Приложение может работать в двух режимах:
+		- Системный прокси (по умолчанию)
+		- TUN-режим
+		- Прокси
+	2. [Nekoray](https://github.com/Matsuridayo/nekoray/releases) 
+	### **Android:**
+	1. [Hiddify](https://play.google.com/store/apps/details?id=app.hiddify.com) ([Github](https://github.com/hiddify/hiddify-next/releases/))
+	2. [V2rayNG](https://play.google.com/store/apps/details?id=com.v2ray.ang)
+	### **IOS:** 
+	1. [Streisand](https://apps.apple.com/us/app/streisand/id6450534064):
+		- Скопировать в буфер и вставить в приложение строку-ключ vless через кнопку (+)
+		- Настроить прямое соединение с Рунетом. Тут несколько шагов.   
+			1. Сначала - скопировать эту длинную строку с настройками в буфер.
+			2. Затем  вставить её в приложение через «+» справа‑вверху.
+			3. Зайти в «Роутинг», и там (поставить галочку), (нажать на «включить») и вернуться назад (стрелка слева)![[IMG_2521 1.png]]
+	2. [Shadowrocket](https://apps.apple.com/us/app/shadowrocket/id932747118)(**Платный**)
+	### **macOS:**
+	1. [Hiddify](https://github.com/hiddify/hiddify-next/releases/)
+	2. [Streisand](https://apps.apple.com/us/app/streisand/id6450534064)
+ 
+  
+## Для создания темы использовались ресурсы:
 - [Личный прокси для чайников: универсальный обход цензуры с помощью VPS, 3X-UI, Reality/CDN и Warp](https://habr.com/ru/articles/785186/)
 - [Современные технологии обхода блокировок: V2Ray, XRay, XTLS, Hysteria, Cloak и все-все-все](https://habr.com/ru/articles/727868/)
